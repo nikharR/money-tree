@@ -18,13 +18,13 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
   
-  # used with gem install ... -P HighSecurity
-  spec.cert_chain  = ["certs/mattatgemco.pem"]
-  # Sign gem when evaluating spec with `gem` command
-  #  unless ENV has set a SKIP_GEM_SIGNING
-  if ($0 =~ /gem\z/) and not ENV.include?("SKIP_GEM_SIGNING")
-    spec.signing_key = File.join(Gem.user_home, ".ssh", "gem-private_key.pem")
-  end
+  # # used with gem install ... -P HighSecurity
+  # spec.cert_chain  = ["certs/mattatgemco.pem"]
+  # # Sign gem when evaluating spec with `gem` command
+  # #  unless ENV has set a SKIP_GEM_SIGNING
+  # if ($0 =~ /gem\z/) and not ENV.include?("SKIP_GEM_SIGNING")
+  #   spec.signing_key = File.join(Gem.user_home, ".ssh", "gem-private_key.pem")
+  # end
 
  
   spec.add_dependency "ffi"
