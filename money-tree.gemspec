@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'money-tree/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "money-tree"
+  spec.name          = "money-tree-extended"
   spec.version       = MoneyTree::VERSION
-  spec.authors       = ["Micah Winkelspecht"]
+  spec.authors       = ["Micah Winkelspecht", "Nikhar Ramchunder"]
   spec.email         = ["winkelspecht@gmail.com"]
-  spec.description   = %q{A Ruby Gem implementation of Bitcoin HD Wallets}
+  spec.description   = %q{A Ruby Gem implementation of Bitcoin HD Wallets (Extended)}
   spec.summary       = %q{Bitcoin Hierarchical Deterministic Wallets in Ruby! (Bitcoin standard BIP0032)}
-  spec.homepage      = "https://github.com/gemhq/money-tree"
+  spec.homepage      = "https://github.com/nikharR/money-tree"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
