@@ -63,6 +63,18 @@ module MoneyTree
           compressed_wif_chars: %w(K L),
           uncompressed_wif_chars: %w(5),
           protocol_version: 70001
+        },
+        qtum: {
+          address_version: '3a',
+          p2sh_version: '32',
+          p2sh_char: '3',
+          privkey_version: '80',
+          privkey_compression_flag: '01',
+          extended_privkey_version: "0488ade4",
+          extended_pubkey_version: "0488b21e",
+          compressed_wif_chars: %w(K L),
+          uncompressed_wif_chars: %w(5),
+          protocol_version: 70001
         }
       )
       hsh[:testnet3] = hsh[:bitcoin_testnet]
